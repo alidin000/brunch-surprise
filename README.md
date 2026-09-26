@@ -1,15 +1,26 @@
 # The Brunch Investigation
 
-A self-contained, no-build static site designed for GitHub Pages.
+A self-contained static site for GitHub Pages. No build step or dependencies are required.
 
-## Personalize it
+## Experience
 
-Venue details and Google Maps searches are in `script.js`. Eggdrop Project was named in your message. I inferred the other three Budapest venues from your descriptions: Cirkusz for classic brunch, Pink Pistachio for the photo-friendly pancakes and waffles, and Goli as the wildcard. Check that these match the places you meant.
+The visitor answers three playful questions. Answers mark clue matches on all four candidate cards without removing or ranking any options. Each candidate opens a separate mystery file. The restaurant name stays hidden until the visitor chooses to investigate that file; only then do its menu and Google Maps buttons appear.
+
+## Venue links and content
+
+Venue data is in `script.js`. It uses the four places and links supplied for this site:
+
+- Eggdrop Project
+- Stika
+- Blueberry Brunch
+- Zileat Brunch & Bistro
+
+Descriptions are clues, not rankings. Edit the `candidates` array in `script.js` to revise a clue, location, dish, menu link, or Maps link.
 
 ## Preview
 
-Open `index.html` in a browser. No package install or build step is needed. The Google Fonts import is optional; the page has local system font fallbacks.
+Open `index.html` in a browser. The Google Fonts stylesheet is optional; local system fallbacks are included.
 
-## Publish as a project site
+## GitHub Pages
 
-Put the contents of this folder in a repository named `brunch-surprise`, then in GitHub open **Settings > Pages** and select **Deploy from a branch**, branch `main`, folder `/ (root)`. The project site address will be `https://alidin000.github.io/brunch-surprise/` once GitHub Pages is enabled for that account and repository.
+The site is published from the `main` branch at the repository root. Its project URL is `https://alidin000.github.io/brunch-surprise/`.
