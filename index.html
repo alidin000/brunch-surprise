@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f0e5">
+  <meta name="description" content="A tiny investigation into our next very important brunch." />
+  <title>The Brunch Investigation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="The Brunch Bureau home"><span class="stamp">B.</span> THE BRUNCH BUREAU</a>
+    <span class="case-number">CASE FILE № 001 <i></i> OPEN</span>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="headline">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> AN OFFICIAL INVESTIGATION</p>
+        <h1 id="headline">A case of<br><em>the brunches.</em></h1>
+        <p class="lede">Three promising suspects. One excellent morning. Your expert opinion is urgently required.</p>
+        <button class="button button-dark" id="beginButton">OPEN THE CASE <span aria-hidden="true">↘</span></button>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a sunny brunch table" role="img">
+        <div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="plate"><div class="plate-inner"></div><div class="toast toast-one"></div><div class="toast toast-two"></div><div class="egg"><i></i></div><span class="leaf leaf-one">✳</span><span class="leaf leaf-two">✿</span></div>
+        <div class="coffee"><div class="coffee-top"></div><div class="handle"></div><span>☕</span></div>
+        <span class="art-note note-one">EXHIBIT A</span><span class="art-note note-two">BEST SERVED SLOWLY</span>
+        <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✦</span>
+      </div>
+      <div class="intro-foot"><span>SCROLL TO INVESTIGATE</span><span class="scroll-mark">↓</span><span>EST. THIS VERY MOMENT</span></div>
+    </section>
+
+    <section class="case-section" id="case" aria-labelledby="case-heading">
+      <div class="section-heading"><div><p class="eyebrow">THE EVIDENCE</p><h2 id="case-heading">Meet the <em>suspects.</em></h2></div><p class="section-aside">Tap a file to inspect<br>the brunch in question.</p></div>
+      <div class="progress-row"><span id="progressLabel">FILE 01 / 03</span><div class="progress-track"><div id="progressFill"></div></div><span>CONFIDENTIAL(ISH)</span></div>
+      <div class="suspect-card" id="suspectCard" aria-live="polite">
+        <div class="card-art" id="cardArt"><span class="art-index" id="artIndex">01</span><span class="art-illustration" id="artIllustration">☼</span><span class="art-caption" id="artCaption">A SUNNY LITTLE AFFAIR</span><span class="art-spark">✳</span></div>
+        <div class="card-copy"><div class="card-topline"><span class="file-label" id="fileLabel">SUSPECT NO. 01</span><span class="status-pill"><i></i> UNDER REVIEW</span></div><h3 id="venueName">The Sunny Table</h3><p class="venue-location" id="venueLocation">A bright little spot · Your city</p><p class="venue-description" id="venueDescription">The sort of place that makes you order one more coffee and forget what time it is.</p><div class="clue-list"><div><span class="clue-icon">✳</span><span><b>THE VIBE</b><small id="venueVibe">Window seats & no rush</small></span></div><div><span class="clue-icon">⌁</span><span><b>THE DRAW</b><small id="venueDraw">A very good morning menu</small></span></div></div><div class="card-actions"><button class="button button-dark" id="pickButton">ADD TO SHORTLIST <span>↗</span></button><button class="text-button" id="skipButton">NEXT SUSPECT <span>→</span></button></div><a class="maps-link" id="investigateLink" href="#" target="_blank" rel="noopener">INVESTIGATE ON GOOGLE MAPS ↗</a></div>
+      </div>
+      <div class="suspect-dots" id="suspectDots" aria-label="Choose a suspect"></div>
+    </section>
+
+    <section class="verdict-section" aria-labelledby="verdictHeading"><div class="verdict-top"><p class="eyebrow">THE WORKING THEORY</p><span>UPDATED LIVE <i></i></span></div><h2 id="verdictHeading">The <em>shortlist.</em></h2><p class="verdict-intro">Your leading candidates, so far. Change your mind as often as necessary.</p><div class="shortlist" id="shortlist"><div class="empty-note"><span>✳</span><p>No suspects selected yet.<br><b>The investigation awaits.</b></p></div></div><div class="verdict-bottom"><p>Have a feeling about one?</p><button class="button button-cream" id="verdictButton">DELIVER THE VERDICT <span>↗</span></button></div></section>
+
+    <section class="closing" id="closing" hidden><span class="closing-star">✳</span><p class="eyebrow">CASE UPDATE: A PLAN IS FORMING</p><h2 id="closingHeading">So... brunch <em>together?</em></h2><p class="closing-copy">I’d love to take you out. You pick the suspect, I’ll bring the appetite.</p><a class="button button-dark" id="shareButton" href="#">SEND THE VERDICT <span>↗</span></a><button class="restart-button" id="restartButton">Start the investigation over</button></section>
+  </main>
+  <footer><a class="wordmark" href="#top"><span class="stamp">B.</span> THE BRUNCH BUREAU</a><span>MADE WITH AN UNREASONABLE AMOUNT OF ENTHUSIASM</span><a href="#top">BACK TO TOP ↑</a></footer>
+</body>
+</html>
